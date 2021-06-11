@@ -1,0 +1,4 @@
+interface Paginated {
+  page: Int!
+  total: Int!
+}

@@ -1,0 +1,13 @@
+type User {
+  id: ID!
+  email: String!
+  provider: Provider
+}
+
+type Mutation {
+  deleteUser(id: ID!): StatusOk!
+}
+
+type Query {
+  getUser(id: ID!): User!
+}

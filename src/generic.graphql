@@ -1,0 +1,98 @@
+scalar Date
+
+type StatusOk {
+  ok: Boolean!
+}
+
+type FieldValidity {
+  ok: Boolean!
+  fields: [String!]
+}
+
+type IdName {
+  id: ID!
+  name: String!
+}
+
+type Id {
+  id: ID!
+}
+
+type Path {
+  url: String!
+}
+
+type Time {
+  hour: Int!
+  minute: Int!
+}
+
+type Address {
+  country: Country!
+  regionId: ID!
+  city: String!
+  postalCode: String!
+  addressFirst: String!
+  addressSecond: String!
+}
+
+type FullAddress {
+  firstName: String!
+  lastName: String!
+  companyName: String!
+  country: Country!
+  regionId: ID!
+  city: String!
+  postalCode: String!
+  addressFirst: String!
+  addressSecond: String!
+  email: String!
+  phone: String!
+}
+
+type Name {
+  firstName: String!
+  lastName: String!
+}
+
+enum Language {
+  EN_US
+  JA_JP
+  ZH_CN
+}
+
+
+enum Currency {
+  AED
+  CNY
+  GBP
+  HKD
+  IDR
+  INR
+  JPY
+  KHR
+  KWD
+  MMK
+  MYR
+  PHP
+  SAR
+  SGD
+  THB
+  TWD
+  USD
+  VND
+}
+
+enum Timezone {
+  ASIA_TOKYO
+  ASIA_SINGAPORE
+  ASIA_BANGKOK
+  ASIA_YANGON
+  ASIA_DHAKA
+  ASIA_KOLKATA
+}
+
+enum Country {
+  JP
+}
+
